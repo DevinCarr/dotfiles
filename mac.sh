@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+# Full install with homebrew
 # Check if Homebrew is installed
 which -s brew
 if [[ $? != 0 ]] ; then
@@ -12,7 +13,7 @@ fi
 brew bundle ./Brewfile
 
 # Move the dotfiles
-for file in ./.{aliases,functions}; do
+for file in ./.{aliases,functions,bash_profile}; do
 	cp $file $HOME;
 done
 
