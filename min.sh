@@ -2,7 +2,7 @@
 
 # Minimal install with only the dotfiles
 # Move the dotfiles
-for file in ./.{aliases,functions,bash_profile}; do
+for file in ./.{aliases,functions,bash_profile,bashrc}; do
 	cp $file $HOME;
 done
 

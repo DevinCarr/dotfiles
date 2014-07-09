@@ -12,11 +12,5 @@ fi
 # Run the Brewfile for more
 brew bundle ./Brewfile
 
-# Move the dotfiles
-for file in ./.{aliases,functions,bash_profile}; do
-	cp $file $HOME;
-done
-
-# Reload the terminal with the new bash_profile
-source ~/.bash_profile
-exec $SHELL -l
+# Finish install with the min.sh
+./min.sh
