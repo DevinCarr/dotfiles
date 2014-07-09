@@ -8,4 +8,3 @@ done
 
 # Reload the terminal with the new bash_profile
 source ~/.bash_profile
-exec $SHELL -l
