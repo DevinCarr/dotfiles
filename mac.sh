@@ -13,4 +13,5 @@ fi
 brew bundle ./Brewfile
 
 # Finish install with the min.sh
+./apm-install.sh
 ./min.sh

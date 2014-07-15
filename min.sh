@@ -2,12 +2,16 @@
 
 # Minimal install with only the dotfiles
 # Move the dotfiles
-for file in ./.{aliases,functions,bash_profile,bashrc}; do
-	cp $file $HOME;
+for file in ./.{aliases,functions,bash_profile,bashrc,atom}; do
+	cp -R $file $HOME;
 done
 
+# Create common directories
 mkdir ~/Documents/Github
 mkdir ~/Documents/Code
+
+# Add atom as git editor
+git config --global core.editor "atom --wait"
 
 # Reload the terminal with the new bash_profile
 source ~/.bash_profile
