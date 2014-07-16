@@ -10,3 +10,8 @@ shopt -s histappend
 # large history
 export HISTSIZE=1000
 export HISTFILESIZE=2000
+
+# set go variables
+export GOPATH=~/Documents/go
+export PATH=$PATH:~/Documents/go/bin/
+export PATH=$PATH:/usr/local/Cellar/go/1.3/bin/

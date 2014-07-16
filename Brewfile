@@ -19,6 +19,7 @@ install gnu-sed --default-names
 install bash
 install bash-completion
 install node
+install go
 
 # Remove outdated versions from the cellar
 cleanup

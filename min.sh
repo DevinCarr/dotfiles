@@ -6,9 +6,8 @@ for file in ./.{aliases,functions,bash_profile,bashrc,atom}; do
 	cp -R $file $HOME;
 done
 
-# Create common directories
-mkdir ~/Documents/Github
-mkdir ~/Documents/Code
+# Build home
+./home-setup.sh
 
 # Add atom as git editor
 git config --global core.editor "atom --wait"
