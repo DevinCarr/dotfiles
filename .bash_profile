@@ -4,7 +4,7 @@ for file in ~/.{path,exports,aliases,functions}; do
 done;
 
 # avoid duplicates and lines with starting spaces
-export HISTCONTROL=ignoredboth
+export HISTCONTROL=erasedups:ignorespace
 # append history entries..
 shopt -s histappend
 # large history
