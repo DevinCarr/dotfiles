@@ -1,4 +1,6 @@
+#!/usr/bin/env bash
+
 apm install\
-	grunt-runner\
 	monokai\
 	git-plus\
+	script\

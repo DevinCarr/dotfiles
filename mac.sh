@@ -10,7 +10,7 @@ else
 fi
 
 # Run the Brewfile for more
-brew bundle ./Brewfile
+./brew
 
 # Finish install with the min.sh
 ./apm-install.sh
