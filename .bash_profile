@@ -9,7 +9,7 @@ gitdirty() {
   if [[ "$status" != "" ]]; then
     git_dirty='*'
   else
-    git_dirty=''
+    git_dirty=' '
   fi
 }
 
@@ -21,7 +21,7 @@ gitcheck() {
     fi
     git_branch="($branch)"
   else
-    git_branch=" "
+    git_branch=""
   fi
 }
 
