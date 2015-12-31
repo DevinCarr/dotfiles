@@ -36,10 +36,6 @@ shopt -s histappend
 export HISTSIZE=1000
 export HISTFILESIZE=2000
 
-# set gopath
-export GOPATH=$HOME/Documents/github/go
-export PATH=$PATH:$GOPATH/bin
-
 # add adb
 export PATH=$PATH:$HOME/Library/android/sdk/platform-tools/
 export PATH=$PATH:$HOME/andromeda/Library/android/sdk/tools/
