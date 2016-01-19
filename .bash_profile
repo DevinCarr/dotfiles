@@ -9,7 +9,7 @@ gitdirty() {
   if [[ "$status" != "" ]]; then
     git_dirty='*'
   else
-    git_dirty=' '
+    git_dirty=''
   fi
 }
 
@@ -26,7 +26,7 @@ gitcheck() {
 }
 
 PROMPT_COMMAND="gitcheck; gitdirty; $PROMPT_COMMAND"
-export PS1="\T[\u]:\W\$git_branch\$git_dirty$ "
+export PS1="[\u@\H]:\W\$git_branch\$git_dirty \[\033[0;36m\]λ \[\033[0m\] "
 
 # avoid duplicates and lines with starting spaces
 export HISTCONTROL=erasedups:ignorespace
@@ -35,6 +35,10 @@ shopt -s histappend
 # large history
 export HISTSIZE=1000
 export HISTFILESIZE=2000
+
+# set gopath
+export GOPATH=$HOME/Documents/github/go
+export PATH=$PATH:$GOPATH/bin
 
 # add adb
 export PATH=$PATH:$HOME/Library/android/sdk/platform-tools/
