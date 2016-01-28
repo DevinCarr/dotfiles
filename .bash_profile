@@ -26,7 +26,7 @@ gitcheck() {
 }
 
 PROMPT_COMMAND="gitcheck; gitdirty; $PROMPT_COMMAND"
-export PS1="[\u@\H]:\W\$git_branch\$git_dirty \[\033[0;36m\]λ \[\033[0m\] "
+export PS1="[\u@\H]:\W\$git_branch\$git_dirty \[\033[0;36m\]λ \[\033[0m\]"
 
 # avoid duplicates and lines with starting spaces
 export HISTCONTROL=erasedups:ignorespace
