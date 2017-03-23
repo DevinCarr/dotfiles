@@ -1,4 +1,4 @@
-syntax on
+syntax enable
 set noswapfile
 set number
 set nowrap
@@ -25,4 +25,5 @@ set cin
 set mouse=a
 set numberwidth=6
 set showmatch
-colo onedark
+set background=dark
+colorscheme solarized

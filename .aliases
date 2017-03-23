@@ -1,6 +1,5 @@
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
-alias ...="cd ../.."
 
 # Shortcuts
 alias g="cd ~/Documents/github"

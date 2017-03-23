@@ -41,5 +41,9 @@ export GOPATH=$HOME/Documents/github/go
 export PATH=$PATH:$GOPATH/bin
 
 # add adb
-export PATH=$PATH:$HOME/Library/android/sdk/platform-tools/
-export PATH=$PATH:$HOME/andromeda/Library/android/sdk/tools/
+export PATH=$PATH:$HOME/Library/android/sdk/platform-tools
+export PATH=$PATH:$HOME/andromeda/Library/android/sdk/tools
+export PATH="/usr/local/sbin:$PATH"
+
+export PATH=$PATH:$HOME/Library/Tex/texbin
+export PATH="/usr/local/opt/llvm/bin:$PATH"
