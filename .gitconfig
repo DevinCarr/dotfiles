@@ -1,0 +1,9 @@
+[user]
+	name = Devin Carr
+	email = DevinCarr@users.noreply.github.com
+
+[push]
+	default = tracking
+
+[github]
+	user = DevinCarr

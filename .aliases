@@ -1,7 +1,0 @@
-# Easier navigation: .., ..., ...., ....., ~ and -
-alias ..="cd .."
-
-# Shortcuts
-alias g="cd ~/Documents/github"
-alias h="history"
-alias gs="git status"
