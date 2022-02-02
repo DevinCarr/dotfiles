@@ -62,5 +62,5 @@ git_prompt_string() {
   [ -n "$git_where" ] && echo "$GIT_PROMPT_SYMBOL$(parse_git_state)$GIT_PROMPT_PREFIX%{$fg[yellow]%}${git_where#(refs/heads/|tags/)}$GIT_PROMPT_SUFFIX"
 }
 
-export PROMPT='%f%F{49}%n%f@%F{168}%m%f:%d λ '
+export PROMPT='%f%F{49}%n%f@%F{168}%m%f:%~ λ '
 export RPROMPT='$(git_prompt_string)%F{30}[%D{%I:%M:%S%p}]%f'
