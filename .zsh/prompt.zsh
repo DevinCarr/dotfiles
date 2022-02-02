@@ -23,7 +23,7 @@ parse_git_state() {
   # Compose this value via multiple conditional appends.
   local GIT_STATE=""
 
-  local NUM_AHEAD="$(git log --oneline @{u}.. 2> /dv/null | wc -l | tr -d ' ')"
+  local NUM_AHEAD="$(git log --oneline @{u}.. 2> /dev/null | wc -l | tr -d ' ')"
   if [ "$NUM_AHEAD" -gt 0 ]; then
     GIT_STATE=$GIT_STATE${GIT_PROMPT_AHEAD//NUM/$NUM_AHEAD}
   fi
@@ -64,4 +64,3 @@ git_prompt_string() {
 
 export PROMPT='%f%F{49}%n%f@%F{168}%m%f:%d λ '
 export RPROMPT='$(git_prompt_string)%F{30}[%D{%I:%M:%S%p}]%f'
-e
